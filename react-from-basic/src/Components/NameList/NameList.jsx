@@ -37,7 +37,12 @@ function NameList(){
              <ul>
                 <NameListItem
                 
-                 Name={nameList.Name.title +' '+nameList.Name.first+' '+nameList.Name.last}
+                 /*Name={nameList.Name.title +' '+nameList.Name.first+' '+nameList.Name.last}
+                  This is an old method*/
+
+                Name={`${nameList.Name.title} ${nameList.Name.first} ${nameList.Name.last}`}
+               // This is a best practice to concatenate with new ES6 feature
+               
                  City={nameList.location.city}
                  Email={nameList.email }
                  Birthday={nameList.dob.date }
