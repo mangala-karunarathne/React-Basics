@@ -7,38 +7,12 @@ class DishdetailsComponent extends Component {
 
     }
 
-    componentWillMount() {
 
-    }
-
-    componentDidMount() {
-
-    }
-
-    componentWillReceiveProps(nextProps) {
-
-    }
-
-    shouldComponentUpdate(nextProps, nextState) {
-
-    }
-
-    componentWillUpdate(nextProps, nextState) {
-
-    }
-
-    componentDidUpdate(prevProps, prevState) {
-
-    }
-
-    componentWillUnmount() {
-
-    }
 
     render() {
         return (
             <div>
-
+                {this.props}
             </div>
         );
     }
@@ -49,3 +23,25 @@ DishdetailsComponent.propTypes = {
 };
 
 export default DishdetailsComponent;
+
+
+// renderComments(dish) {
+    //     if (dish != null)
+    //     return(
+    //         <div>
+    //           {dish.comments.map((item) => {
+    //                      return(
+    //                         <div key={item.id}>
+    //                             <p > {item.author} : </p>
+    //                             <p > {item.comment}</p>
+    //                         </div>
+    //                      )
+    //                      })}
+                
+    //         </div>
+    //     );
+    // else
+    //     return(
+    //         <div></div>
+    //     );
+    // }
